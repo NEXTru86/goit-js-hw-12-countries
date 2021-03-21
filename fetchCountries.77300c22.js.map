@@ -1,0 +1,1 @@
+{"version":3,"sources":["fetchCountries.js"],"names":["r","fetch","then","data","console","log"],"mappings":";AAAA,IAAMA,EAAIC,MAAM,gDAAgDC,KAAK,SAAAC,GACjEC,QAAQC,IAAIF","file":"fetchCountries.77300c22.js","sourceRoot":"..\\src","sourcesContent":["const r = fetch('https://restcountries.eu/rest/v2/name/russia').then(data => {\r\n    console.log(data);\r\n})"]}
