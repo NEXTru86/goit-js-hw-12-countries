@@ -118,8 +118,12 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"fetchCountries.js":[function(require,module,exports) {
-var r = fetch('https://restcountries.eu/rest/v2/name/russia').then(function (data) {
-  console.log(data);
+fetch('https://restcountries.eu/rest/v2/name/russia').then(function (response) {
+  return response.json();
+}).then(function (country) {
+  console.log(country);
+}).catch(function (error) {
+  console.log(error);
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -149,7 +153,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51265" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53281" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
