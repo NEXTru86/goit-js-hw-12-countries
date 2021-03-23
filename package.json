@@ -1,0 +1,35 @@
+{
+  "name": "goit-js-hw-12-countries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://NEXTru86.github.io/goit-js-hw-12-countries",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html",
+    "predeploy": "npm run build -- --public-url /goit-js-hw-12-countries/",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NEXTru86/goit-js-hw-12-countries.git"
+  },
+  "keywords": [],
+  "author": "Pavel Kharin <kharinpav@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NEXTru86/goit-js-hw-12-countries/issues"
+  },
+  "devDependencies": {
+    "@pnotify/core": "^5.2.0",
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "^1.11.0",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "@pnotify/mobile": "^5.2.0",
+    "lodash.debounce": "^4.0.8"
+  }
+}

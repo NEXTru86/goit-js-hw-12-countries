@@ -1,0 +1,81 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  color: var(--text-color);
+  background-color: #ffffff;
+}
+
+span {
+  font-weight: 700;
+}
+
+.list {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1000px;
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
+
+.name {
+  text-align: center;
+}
+
+.js-search {
+  margin-top: 25px;
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.js-list {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.167;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+
+.country-item {
+  margin-bottom: 15px;
+}
+
+.country-data {
+  display: flex;
+}
+
+.country-list-data {
+  margin-right: 30px;
+}
+
+.lang-item {
+  margin: 0 15px;
+}
